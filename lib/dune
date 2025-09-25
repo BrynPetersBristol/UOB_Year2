@@ -1,0 +1,5 @@
+(library
+ (name myproj)
+ (wrapped false))
+
+ (env (dev (flags (:standard -warn-error -A))))
