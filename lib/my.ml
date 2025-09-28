@@ -92,3 +92,8 @@ let deck =
   let spade_cards = List.map (fun r -> (r, Spades)) ranks in
   let diamond_cards = List.map (fun r -> (r, Diamonds)) ranks in
   heart_cards @ club_cards @ spade_cards @ diamond_cards
+
+
+
+let rec fac (x : int) : int =
+  if x = 0 then 1 else x * fac (x - 1) 
