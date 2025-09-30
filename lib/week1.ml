@@ -1,5 +1,5 @@
 
-
+(*2.1*)
 (*1*)
 let rec fac (x : int) : int =
   if x = 0 then 1 else x * fac (x - 1)
@@ -19,4 +19,19 @@ let rec sum_digits (n : int) : int =
     let p = n / 10 in
     let q = n mod 10 in
     q + sum_digits (p)
+
+
+
+(*2.2*)
+(*1*)
+let is_punctuation (x : char) : bool = 
+  let a = x = '!' in
+  let b =  x = '?' in
+  a || b
+
+(*2*)
+let exlaim (s : string) : string =
+  let change_char c =
+    if c = '.' then '!' else c in
+  String.map change_char s
 
